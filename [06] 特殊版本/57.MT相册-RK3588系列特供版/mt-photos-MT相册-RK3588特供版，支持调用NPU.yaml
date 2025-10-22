@@ -37,7 +37,6 @@
 
 # MT Photos AI 识别相关任务独立部署项目 (RKNN 移植版)
 # 项目地址：https://github.com/a15355447898a/mt-photos-ai-rk
-# 镜像地址：https://hub.docker.com/r/a15355447898a/mt-photos-ai-rknn
 # 基于PaddleOCR实现的文本识别(OCR)接口，利用 RKNN 进行加速
 # 基于Chinese-CLIP（OpenAI CLIP模型的中文版本）实现的图片、文本提取特征接口，利用 RKNN 进行加速
 
