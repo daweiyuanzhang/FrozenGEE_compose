@@ -39,16 +39,11 @@ services:
       - TZ=Asia/Shanghai
       # 时区
     ports:
-      - 8088:8088/tcp
+      - 8088:8088
       # WebUI 端口
     restart: always
     # 重启策略，可根据实际情况而选择 no/always/unless-stopped/on-failure/on-failure:3
     labels:
-      icon: http://IP:PORT/i/user_01/jmalcloud.png
-      # 适用于CasaOS导入时自动写上图标地址
-      # 注意：在导入CasaOS时，记得补全本机端口号
-      # 注意：图标地址仅供参考，请根据实际填写，推荐自搭建兰空图床使用
-      ########################################
       net.unraid.docker.managed: dockerman
       net.unraid.docker.webui: http://[IP]:[PORT:8088]
       # 适用于unraid界面打开WebUI，注意端口号写的是容器端口，如有自定义，自行修改
@@ -70,9 +65,9 @@ services:
       - TZ=Asia/Shanghai
       # 时区
     ports:
-      - 7070:80/tcp
+      - 7070:80
       # 管理页面 端口
-      - 7071:8089/tcp
+      - 7071:8089
       # 博客页面 端口
       # ↓切勿修改
     depends_on:
